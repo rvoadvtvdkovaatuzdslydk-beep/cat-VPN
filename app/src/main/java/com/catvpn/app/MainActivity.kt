@@ -37,12 +37,19 @@ private fun CatVpnScreen() {
             verticalArrangement = Arrangement.Center
         ) {
             Text(text = "🐱 Cat VPN", style = MaterialTheme.typography.headlineLarge)
-            Spacer(modifier = Modifier.height(16.dp))
-            Text(text = "Добро пожаловать!")
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(20.dp))
+            Text(text = "🇳🇱 Нидерланды", style = MaterialTheme.typography.titleLarge)
+            Spacer(modifier = Modifier.height(12.dp))
+            Text(text = "Протокол: WireGuard")
+            Spacer(modifier = Modifier.height(20.dp))
             Text(
-                text = "Сервер ещё не настроен. Это стартовая версия приложения — VPN-подключение пока не запускается.",
+                text = "Сервер пока не запущен. Для подключения нужен настоящий сервер в Нидерландах с публичным IP-адресом и безопасная конфигурация WireGuard.",
                 style = MaterialTheme.typography.bodyMedium
+            )
+            Spacer(modifier = Modifier.height(12.dp))
+            Text(
+                text = "Это сборка интерфейса. VPN-туннель ещё не подключён, поэтому приложение пока не меняет интернет-соединение.",
+                style = MaterialTheme.typography.bodySmall
             )
         }
     }
